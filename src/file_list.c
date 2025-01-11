@@ -202,6 +202,9 @@ extern const file_hint_t file_hint_cow;
 #if !defined(SINGLE_FORMAT) || defined(SINGLE_FORMAT_cpi)
 extern const file_hint_t file_hint_cpi;
 #endif
+#if !defined(SINGLE_FORMAT) || defined(SINGLE_FORMAT_cr3)
+extern const file_hint_t file_hint_cr3;
+#endif
 #if !defined(SINGLE_FORMAT) || defined(SINGLE_FORMAT_crw)
 extern const file_hint_t file_hint_crw;
 #endif
@@ -1257,6 +1260,9 @@ file_enable_t array_file_enable[]=
 #endif
 #if !defined(SINGLE_FORMAT) || defined(SINGLE_FORMAT_cpi)
   { .enable=0, .file_hint=&file_hint_cpi  },
+#endif
+#if !defined(SINGLE_FORMAT) || defined(SINGLE_FORMAT_cr3)
+  { .enable=0, .file_hint=&file_hint_cr3  },
 #endif
 #if !defined(SINGLE_FORMAT) || defined(SINGLE_FORMAT_crw)
   { .enable=0, .file_hint=&file_hint_crw  },

@@ -108,6 +108,7 @@ file_C			= filegen.c \
 			  file_compress.c \
 			  file_cow.c \
 			  file_cpi.c \
+			  file_cr3.c \
 			  file_crw.c \
 			  file_csh.c \
 			  file_ctg.c \
